@@ -1,0 +1,20 @@
+ion-content {
+  background: linear-gradient(to bottom, #29660A , #e0f3d6 
+) 
+}
+ 
+h1{
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+ 
+p{
+  text-align: justify;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 
+h4{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}

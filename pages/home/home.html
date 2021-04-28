@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+  <h1>APPLIANCE INSTALLMENT PLAN CALCULATOR</h1>
+  <p>
+    Welcome to the Installment Plan Calculator for Appliances! This app will help you choose the best installment plan for you with the appliance you purchased.
+  </p>
+ 
+<img src= "https://cdn.jsdelivr.net/gh/raflocsin/ionic-tjmvtm@master/appliance%20bg.jpg">
+ 
+<br />
+ 
+<p>Please enter the price of the appliance:</p>
+  <ion-item>
+    <ion-label>Appliance Price: </ion-label>
+    <ion-input type="number" [(ngModel)]="price"></ion-input>
+  </ion-item>
+ 
+<p>Please enter the length of Repayment (9, 12 or 24 Months):</p>
+  <ion-item>
+    <ion-label>Length of Repayment: </ion-label>
+    <ion-input type="number" [(ngModel)]="length"></ion-input>
+  </ion-item>
+ 
+  <button ion-button color="secondary" (click)="calculateIP()">
+    CALCULATE</button>
+ 
+  <ion-item *ngIf="dpAmount">
+    <h4>Your Downpayment Amount is: ₱  {{dpAmount}} </h4>
+  </ion-item>
+ 
+   <ion-item *ngIf="lAmount">
+    <h4>Your Total Loan Amount is: ₱  {{lAmount}} </h4>
+  </ion-item>
+ 
+  <ion-item *ngIf="monPay">
+    <h4>Your Monthly Payment is: ₱  {{monPay}} </h4>
+  </ion-item>
